@@ -1,0 +1,12 @@
+# inventory/hcloud.yml
+
+plugin: hetzner.hcloud.hcloud
+token: "0QtyGLqWyuWkrPn49Pb5aO7aM80bqqJLusgEAErFpvWDMXcRHQgJEkfgWn3Un77r"
+
+keyed_groups:
+  - key: labels
+    prefix: app
+
+compose:
+  ansible_host: "'{{ labels.ssh_ip | default(ipv4) }}'"
+

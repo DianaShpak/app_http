@@ -1,0 +1,7 @@
+---
+- name: Restart a container
+  docker_container:
+    name: httpbin
+    image: kennethreitz/httpbin
+    ports:
+      - "8000:80"

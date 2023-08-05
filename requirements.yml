@@ -1,0 +1,4 @@
+# requirements.yml
+
+collections:
+  - name: hetzner.hcloud

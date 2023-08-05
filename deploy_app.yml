@@ -1,0 +1,16 @@
+---
+- hosts:
+    - all
+  user: root
+  become: true
+  become_method: sudo
+  roles:
+    - docker_install
+
+- hosts:
+    - app_type_app
+  user: root
+  become: true
+  become_method: sudo
+  roles:
+    - start_app
