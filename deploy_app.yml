@@ -1,6 +1,6 @@
 ---
 - hosts:
-    - all
+    - app_http
   user: root
   become: true
   become_method: sudo
@@ -8,7 +8,7 @@
     - docker_install
 
 - hosts:
-    - app_type_app
+    - app_http
   user: root
   become: true
   become_method: sudo

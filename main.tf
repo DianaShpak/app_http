@@ -32,7 +32,7 @@ resource "hcloud_server" "app" {
   location    = var.location
   ssh_keys  = ["${data.hcloud_ssh_key.ssh_key.id}"]
   labels = {
-    type = "app"
+    type = "http"
   }
   user_data = file("user_data.yml")
 }
