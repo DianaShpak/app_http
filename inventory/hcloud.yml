@@ -4,7 +4,7 @@ plugin: hetzner.hcloud.hcloud
 token: "0QtyGLqWyuWkrPn49Pb5aO7aM80bqqJLusgEAErFpvWDMXcRHQgJEkfgWn3Un77r"
 
 keyed_groups:
-  - key: labels
+  - key: labels.type
     prefix: app
 
 compose:
